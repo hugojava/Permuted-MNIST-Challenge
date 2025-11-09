@@ -1,0 +1,4 @@
+# Mettre les dépendances
+xgboost==2.0.3
+numpy
+scikit-learn
