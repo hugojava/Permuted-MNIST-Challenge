@@ -7,7 +7,7 @@ L’objectif est d’évaluer la robustesse et la capacité de généralisation 
 
 ## 📂 Structure du projet
 
-## 📁 Project Structure
+
 
 ```bash
 permuted_mnist/
@@ -85,6 +85,8 @@ permuted_mnist/
 ├── pyproject.toml
 └── .gitignore
 
+```
+---
 
 ## ⚙️ Installation
 
