@@ -7,8 +7,6 @@ L’objectif est d’évaluer la robustesse et la capacité de généralisation 
 
 ## 📂 Structure du projet
 
-
-
 ```bash
 📦 mnist_perturbed_agents/
 │
