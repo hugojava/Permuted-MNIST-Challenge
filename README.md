@@ -10,80 +10,56 @@ L’objectif est d’évaluer la robustesse et la capacité de généralisation 
 
 
 ```bash
-permuted_mnist/
-├── permuted_mnist/
-│   ├── agent/
-│   │   ├── linear/
-│   │   │   └── agent.py
-│   │   ├── random/
-│   │   │   └── agent.py
-│   │   └── torch_mlp/
-│   │       └── agent.py
+📦 mnist_perturbed_agents/
+│
+├── 📁 models/
+│   ├── 📁 KNN/
+│   │   └── knn.py
 │   │
-│   ├── data/
-│   │   ├── mnist_test_images.npy
-│   │   ├── mnist_test_labels.npy
-│   │   ├── mnist_train_images.npy
-│   │   └── mnist_train_labels.npy
+│   ├── 📁 Linear/
+│   │   └── linear.py
 │   │
-│   ├── env/
-│   │   ├── __init__.py
-│   │   ├── permuted_mnist.py
-│   │   └── renderer.py
+│   ├── 📁 Logistic_Regression/
+│   │   └── logistic_regression.py
 │   │
-│   └── __init__.py
+│   ├── 📁 MLP/
+│   │   ├── agent_Bruce_Wayne.py
+│   │   ├── agent_James_Bond.py
+│   │   ├── agent_James_Bond_New_Generation_1.py
+│   │   ├── agent_James_Bond_New_Generation_2.py
+│   │   ├── agent_Peter_Parker.py
+│   │   ├── agent_mario.py
+│   │   ├── agent_mlp_v3.py
+│   │   ├── mlp_v0.py
+│   │   └── mlp_v1.py
+│   │
+│   ├── 📁 Random/
+│   │   └── random.py
+│   │
+│   └── 📁 Xg_boost/
+│       └── xg_boost.py
 │
-├── permuted_mnist.egg-info/
+├── 📁 notebooks/
+│   ├── Knn_experiment.ipynb
+│   ├── Logistic_Regression_experiment.ipynb
+│   ├── MLP_James_Bond_experiment.ipynb
+│   ├── MLP_New_Gen_experiment.ipynb
+│   ├── MLP_experiment.ipynb
+│   ├── XGBoost_experiment.ipynb
+│   ├── experiment0.ipynb
+│   ├── grid_search_mlp.ipynb
+│   └── visualization_mlp.ipynb
 │
-├── Permuted-MNIST-*/           # Dossier contenant les données brutes et modèles
-│   ├── data/MNIST/raw/
-│   └── models/
-│       ├── KNN/
-│       │   └── knn.py
-│       ├── Linear/
-│       │   └── linear.py
-│       ├── Logistic_Regression/
-│       │   └── logistic_regression.py
-│       ├── MLP/
-│       │   ├── agent_Bruce_Wayne.py
-│       │   ├── agent_James_Bond.py
-│       │   ├── agent_James_Bond_New_Generation_1.py
-│       │   ├── agent_James_Bond_New_Generation_2.py
-│       │   ├── agent_mario.py
-│       │   ├── agent_Peter_Parker.py
-│       │   ├── mlp_v0.py
-│       │   ├── mlp_v1.py
-│       │   └── mlp_v3.py
-│       ├── Random/
-│       │   └── random.py
-│       └── Xg_boost/
-│           └── xg_boost.py
-│
-├── notebooks/
-│   ├── experiments/
-│   │   ├── experiment0.ipynb
-│   │   ├── experiment1.ipynb
-│   │   ├── experiment2.ipynb
-│   │   ├── experiment3.ipynb
-│   │   ├── experiment4.ipynb
-│   │   ├── experiment5.ipynb
-│   │   ├── experiment6.ipynb
-│   │   ├── grid_search_mlp.ipynb
-│   │   └── visualization_mlp.ipynb
-│   ├── report.ipynb
-│   └── getting_started.ipynb
-│
-├── utils/
+├── 📁 utils/
 │   └── visualization.py
 │
-├── tools/
-│
-├── agent.py
+├── .gitignore
 ├── README.md
-├── requirements.txt
-├── setup.py
+├── agent.py
 ├── pyproject.toml
-└── .gitignore
+├── report.ipynb
+└── requirements.txt
+
 
 ```
 ---
