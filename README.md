@@ -106,7 +106,7 @@ permuted_mnist/
 2. **installer les dépendances :**
     ```bash
     # 1️⃣ Créer un environnement virtuel
-    python -m venv venv
+    python3 -m venv venv
 
     # 2️⃣ L'activer
     # Sous Linux / macOS :
