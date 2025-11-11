@@ -1,10 +1,10 @@
-# Meilleur agent
+# Meilleur agent 
 
 """
-name_file = agent_James_Bond.py
+name_file = agent_James_Bond_New_Generation_2.py
 Permuted MNIST — MLP Submission (fast, 1-layer)
-Config (~20 s/task locally):
-hidden=(2048,), dropout=0.10, batch_size=1024,
+Config (~50 s/task locally):
+hidden=(1280,), dropout=0.10, batch_size=256,
 lr=1.5e-3, weight_decay=1e-4, label_smoothing=0.05,
 max_epochs=10, val_fraction=0.10. CPU-only.
 """
@@ -25,7 +25,7 @@ except Exception:
     pass
 
 
-def build_mlp(input_dim=784, hidden=(2048,), dropout=0.10, num_classes=10):
+def build_mlp(input_dim=784, hidden=(1280,), dropout=0.10, num_classes=10):
     layers = []
     d = input_dim
     for h in hidden:
@@ -49,15 +49,15 @@ class Agent:
         # Hyperparameters from your selected config
         self.input_dim = 28 * 28
         self.num_classes = int(output_dim)
-        self.hidden = (2048,)
+        self.hidden = (1280,)
         self.dropout = 0.10
-        self.batch_size = 1024
+        self.batch_size = 256
         self.learning_rate = 1.5e-3
         self.weight_decay = 1e-4
         self.label_smoothing = 0.05
         self.max_epochs = 10
         self.val_fraction = 0.10
-        self.time_budget_s = 58.0  # safety guard
+        self.time_budget_s = 57.0  # safety guard
 
         if seed is None:
             seed = 42
